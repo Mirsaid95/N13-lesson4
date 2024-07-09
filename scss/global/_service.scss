@@ -1,0 +1,123 @@
+.service {
+    width: 100%;
+    height: 50vh;
+    padding-top: 80px;
+
+    &__items {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        color: #3D3D3F;
+    }
+
+    &__cards {
+        padding-top: 50px;
+        display: flex;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+
+
+
+    }
+
+    &__card {
+        width: 500px;
+        height: 300px;
+        display: flex;
+        padding-top: 50px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        position: relative;
+
+        &:hover {
+            .service__icon-img {
+                background-color: #fc8a68;
+                border-color: #fc8a68;
+
+            }
+            .fa-solid{
+                background-color: #fc8a68;
+                
+            }
+        }
+
+
+    }
+
+    &__info-title {
+        font-size: 24px;
+        color: #3D3D3F;
+    }
+
+    &__info-list {
+        width: 80%;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .fa-solid {
+        padding: 5%;
+        font-size: 18px;
+        border-radius: 50%;
+        background-color: whitesmoke;
+
+        &:hover {
+            background-color: #fc8a68;
+            color: white;
+        }
+    }
+
+    .r {
+        background-color: #FF7A50;
+        color: white;
+    }
+
+    &__icon-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        position: absolute;
+        left: 170;
+        top: -50px;
+        background-color: aliceblue;
+        z-index: 2;
+        border: 15px solid aliceblue;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .bg {
+        background-color: #fc8a68;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+
+        img {
+
+            width: 60%;
+        }
+    }
+
+
+
+
+
+}
